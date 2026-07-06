@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14 - Arreglos de números</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Calculadora de Arreglos</h1>
+        <p>Ingresa números separados por comas para calcular el mayor, menor y promedio</p>
+
+        <form onsubmit="calcular(); return false;">
+            <label for="numeros">Números (separados por comas)</label>
+            <input type="text" id="numeros" placeholder="Ej: 10, 20, 30, 40, 50" required>
+
+            <label for="mayor">Número Mayor</label>
+            <input type="text" id="mayor" readonly placeholder="El resultado aparecerá aquí">
+
+            <label for="menor">Número Menor</label>
+            <input type="text" id="menor" readonly placeholder="El resultado aparecerá aquí">
+
+            <label for="promedio">Promedio</label>
+            <input type="text" id="promedio" readonly placeholder="El resultado aparecerá aquí">
+
+        <button type="submit">Calcular</button>
+    </div>
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>

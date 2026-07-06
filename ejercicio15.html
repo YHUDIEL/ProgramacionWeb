@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15 - Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Gestión de Estudiantes</h1>
+        <p>Agrega estudiantes con su calificación y calcula estadísticas</p>
+
+        <form onsubmit="calcular(); return false;">
+            <label for="nombre">Nombre del Estudiante</label>
+            <input type="text" id="nombre" placeholder="Ej: Juan">
+
+            <label for="calificacion">Calificación</label>
+            <input type="number" id="calificacion" placeholder="Ej: 85" min="0" max="100">
+
+            <button type="button" onclick="agregarEstudiante()">Agregar Estudiante</button>
+
+            <label for="promedio">Calificación Promedio</label>
+            <input type="text" id="promedio" readonly placeholder="El resultado aparecerá aquí">
+
+            <label for="masAlta">Estudiante con Calificación más Alta</label>
+            <input type="text" id="masAlta" readonly placeholder="El resultado aparecerá aquí">
+
+            <label for="masBaja">Estudiante con Calificación más Baja</label>
+            <input type="text" id="masBaja" readonly placeholder="El resultado aparecerá aquí">
+
+        <button type="submit">Calcular</button>
+    </div>
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

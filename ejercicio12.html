@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 12 - Convertidor pesos a dolares</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Convertidor de Moneda</h1>
+        <p>Ingresa cantidad en pesos y conviertela a dolares</p>
+
+        <form onsubmit="convertir(); return false;">
+            <label for="pesos">Cantidad en Pesos ($)</label>
+            <input type="number" id="pesos" placeholder="Ej: 1000" min ="0" required>
+           
+            <label for="dolares">Resultado en Dolares (USD)</label>
+            <input type="text" id="dolares" readonly placeholder="El resultado aparecerá aquí">
+
+        <button type="submit">Convertir</button>
+    </div>
+    <script src="js/ejercicio12.js"></script>
+</body>
+</html>
