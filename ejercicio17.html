@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 17 - Gestión de tareas con Local Storage</title>
+    <link rel="stylesheet" href="css/ejercicio11.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Gestión de tareas pendientes</h1>
+        <p>Agrega tus tareas pendientes. Se guardan en el Local Storage de tu navegador, así que siguen ahí aunque cierres y vuelvas a abrir la página.</p>
+
+        <label for="tarea">Nueva tarea:</label>
+        <input type="text" id="tarea" placeholder="Ejemplo: Estudiar JavaScript">
+        <button onclick="agregarTarea()">Agregar Tarea</button>
+
+        <p class="lista">Tareas pendientes:</p>
+        <ul id="listaTareas"></ul>
+    </div>
+
+    <script src="js/ejercicio17.js"></script>
+</body>
+</html>
